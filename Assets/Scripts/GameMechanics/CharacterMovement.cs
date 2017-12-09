@@ -28,7 +28,7 @@ public class CharacterMovement : MonoBehaviour {
 
     private void Update()
     {
-        UpdateMovement();
+        //UpdateMovement();
     }
 
     private void OnValidate()
@@ -55,7 +55,7 @@ public class CharacterMovement : MonoBehaviour {
     }
     #endregion set directions
 
-    private void UpdateMovement()
+    public void UpdateMovement()
     {
         Vector2 goalSpeed = Vector2.zero;
 
