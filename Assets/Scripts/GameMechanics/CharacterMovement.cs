@@ -74,8 +74,5 @@ public class CharacterMovement : MonoBehaviour {
         this.transform.position += new Vector3(currentVelocity.x, currentVelocity.y, 0);
     }
 
-    private void UpdateCurrenctVelocity()
-    {
-
-    }
+    
 }
