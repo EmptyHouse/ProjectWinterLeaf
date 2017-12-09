@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour {
 
     private void Update()
     {
-        characterMovement.SetHorizontalDirection(Input.GetAxis("Horizontal"));
-        characterMovement.SetVerticalDirection(Input.GetAxis("Vertical"));
+        characterMovement.SetHorizontalDirection(Input.GetAxisRaw("Horizontal"));
+        characterMovement.SetVerticalDirection(Input.GetAxisRaw("Vertical"));
         characterMovement.UpdateMovement();
 
 

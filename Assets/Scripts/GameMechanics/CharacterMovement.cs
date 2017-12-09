@@ -71,7 +71,7 @@ public class CharacterMovement : MonoBehaviour {
 
         currentVelocity = Vector2.MoveTowards(currentVelocity, goalSpeed, Time.deltaTime * acceleration);
 
-        this.transform.position += new Vector3(currentVelocity.x, currentVelocity.y, 0);
+        this.transform.position += (Time.deltaTime * new Vector3(currentVelocity.x, currentVelocity.y, 0));
     }
 
     
