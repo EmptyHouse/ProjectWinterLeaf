@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour {
         characterMovement.SetVerticalDirection(Input.GetAxisRaw("Vertical"));
         characterMovement.UpdateMovement();
 
-
     }
     #endregion monobehaviour methods
 }

@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour {
     private Transform playerTransform;
     [Tooltip("This list will hold enemy Transforms that the camera shold focus. Typically when in action. Can also be used to focus on important items")]
     private List<Transform> secondaryTargetList = new List<Transform>();
+    private Vector3 cameraVelocity = Vector3.zero;
 
     #endregion main variables
 
@@ -27,7 +28,7 @@ public class CameraFollow : MonoBehaviour {
     /// Camera should be one of the last things to update, so that the character and enemies have time to update
     /// their positions before updateing the camera's position
     /// </summary>
-    private void LateUpdate()
+    private void Update()
     {
         Vector3 goalPosition = new Vector3(this.playerTransform.position.x, this.playerTransform.position.y, this.transform.position.z);
 
