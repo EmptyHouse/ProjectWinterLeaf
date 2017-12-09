@@ -11,6 +11,8 @@ public class CharacterMovement : MonoBehaviour {
 
 
     private Animator anim;
+    private float hInput;
+    private float vInput;
     #endregion main variables
 
     #region monobehaviour methods
@@ -25,5 +27,27 @@ public class CharacterMovement : MonoBehaviour {
 
     }
     #endregion monobehaviour methods
+
+    #region set directions
+    /// <summary>
+    /// Sets the scale of the horizontal input. Should be a number between -1 and 1. 
+    /// 
+    /// </summary>
+    /// <param name="hInput"></param>
+    public void SetHorizontalDirection(float hInput)
+    {
+        this.hInput = Mathf.Sign(hInput) * Mathf.Min(1, Mathf.Abs(hInput));
+    }
+
+    public void SetVerticalDirection(float vInput)
+    {
+        this.vInput = Mathf.Sign(vInput) * Mathf.Min(1, Mathf.Abs(vInput));
+    }
+    #endregion set directions
+
+    private void UpdateMovement()
+    {
+
+    }
 
 }
