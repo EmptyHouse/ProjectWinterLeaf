@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
     #region main variables
+    [Tooltip("This will determine how much we want to focus on secondary characters. You can set the value between 0 and 1. 0 being no focus on the secondary targets and 1 being full focus on the secondary targets")]
+    [Range(0, 1)]
+    public float secondaryFocusPercent = .5f;
     public float cameraSpeed = 12;
 
     [Tooltip("A reference to the player to follow. This is the most important unit to follow when calculating camera position")]
@@ -40,5 +43,15 @@ public class CameraFollow : MonoBehaviour {
     public void RemoveSecondaryTargetToFollow(Transform trasformToRemove)
     {
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
     }
 }
