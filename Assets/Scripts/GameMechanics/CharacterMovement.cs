@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour {
+    #region const variables
+    private const float MIN_MOVEMENT_THRESHOLD = 0.3f;
+    #endregion const variables
     #region main variables
     public float walkSpeed = 15;
     public float runSpeed = 25;
@@ -13,6 +16,7 @@ public class CharacterMovement : MonoBehaviour {
     private Animator anim;
     private float hInput;
     private float vInput;
+    private Vector2 currentVelocity = Vector2.zero;
     #endregion main variables
 
     #region monobehaviour methods
@@ -24,7 +28,13 @@ public class CharacterMovement : MonoBehaviour {
 
     private void Update()
     {
+        UpdateMovement();
+    }
 
+    private void OnValidate()
+    {
+        if (walkSpeed < 0) walkSpeed = 0;
+        if (runSpeed < 0) runSpeed = 0;
     }
     #endregion monobehaviour methods
 
@@ -47,7 +57,24 @@ public class CharacterMovement : MonoBehaviour {
 
     private void UpdateMovement()
     {
+        Vector2 goalSpeed = Vector2.zero;
+        float x = 0;
+        float y = 0;
+
+        if (Mathf.Abs(this.hInput) > MIN_MOVEMENT_THRESHOLD)
+        {
+            goalSpeed.x = Mathf.Sign(this.hInput);
+        }
+        if (Mathf.Abs(this.vInput) > MIN_MOVEMENT_THRESHOLD)
+        {
+            goalSpeed.y = Mathf.Sign(this.vInput);
+        }
+        goalSpeed = goalSpeed.normalized * runSpeed;
 
     }
 
+    private void UpdateCurrenctVelocity()
+    {
+
+    }
 }
