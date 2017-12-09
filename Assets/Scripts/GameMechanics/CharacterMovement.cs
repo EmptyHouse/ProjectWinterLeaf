@@ -58,8 +58,6 @@ public class CharacterMovement : MonoBehaviour {
     private void UpdateMovement()
     {
         Vector2 goalSpeed = Vector2.zero;
-        float x = 0;
-        float y = 0;
 
         if (Mathf.Abs(this.hInput) > MIN_MOVEMENT_THRESHOLD)
         {
@@ -71,6 +69,9 @@ public class CharacterMovement : MonoBehaviour {
         }
         goalSpeed = goalSpeed.normalized * runSpeed;
 
+        currentVelocity = Vector2.MoveTowards(currentVelocity, goalSpeed, Time.deltaTime * acceleration);
+
+        this.transform.position += new Vector3(currentVelocity.x, currentVelocity.y, 0);
     }
 
     private void UpdateCurrenctVelocity()
