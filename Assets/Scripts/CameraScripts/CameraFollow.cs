@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour {
     [Tooltip("A reference to the player to follow. This is the most important unit to follow when calculating camera position")]
     private Transform playerTransform;
     [Tooltip("This list will hold enemy Transforms that the camera shold focus. Typically when in action. Can also be used to focus on important items")]
-    private List<Transform> secondaryTargetList = new List<Transform>();
+    private List<ICameraFocusable> secondaryTargetList = new List<ICameraFocusable>();
     private Vector3 cameraVelocity = Vector3.zero;
 
     #endregion main variables
@@ -34,25 +34,56 @@ public class CameraFollow : MonoBehaviour {
 
         this.transform.position = Vector3.Lerp(this.transform.position, goalPosition, Time.deltaTime * cameraSpeed);
     }
-    #endregion monobehaviour methods
-
-    public void AddSecondaryTargetToFollow(Transform transformToAdd)
-    {
-
-    }
-
-    public void RemoveSecondaryTargetToFollow(Transform trasformToRemove)
-    {
-
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        ICameraFocusable cameraFocusable = collision.GetComponent<ICameraFocusable>();
+
+        if (cameraFocusable != null)
+        {
+            AddSecondaryTargetToFollow(cameraFocusable);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        ICameraFocusable cameraFocusable = collision.GetComponent<ICameraFocusable>();
+
+        if (cameraFocusable != null)
+        {
+            RemoveSecondaryTargetToFollow(cameraFocusable);
+        }
     }
+    #endregion monobehaviour methods
+
+
+    #region secondary target methods
+    /// <summary>
+    /// Adds a secondary target to the list. Because it is added to the list, does not necessarily automatically
+    /// make the camera follow it. The object must also be engaged with the player or in an active state
+    /// </summary>
+    /// <param name="cameraFocusable"></param>
+    public void AddSecondaryTargetToFollow(ICameraFocusable cameraFocusable)
+    {
+        if (!secondaryTargetList.Contains(cameraFocusable))
+        {
+            secondaryTargetList.Add(cameraFocusable);
+        }
+    }
+
+    /// <summary>
+    /// Removes a target from the list. This will typically be called an enemy is out of reach but should also be called when an enemy
+    /// dies so that the camera does not follow it after the fact
+    /// </summary>
+    /// <param name="cameraFocusable"></param>
+    public void RemoveSecondaryTargetToFollow(ICameraFocusable cameraFocusable)
+    {
+        if (secondaryTargetList.Contains(cameraFocusable))
+        {
+            secondaryTargetList.Remove(cameraFocusable);
+        }
+    }
+    #endregion secondary target methods
+
+    
 }
