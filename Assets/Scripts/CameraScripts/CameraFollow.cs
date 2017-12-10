@@ -83,6 +83,28 @@ public class CameraFollow : MonoBehaviour {
             secondaryTargetList.Remove(cameraFocusable);
         }
     }
+
+    /// <summary>
+    /// Returns an average offset that the secondary focusable targets will be located.
+    /// </summary>
+    /// <returns></returns>
+    private Vector2 GetSecondaryTargetAverage()
+    {
+        Vector2 secondaryGoalTarget = Vector2.zero;
+        int activeCameraFocusableCount = 0;
+        foreach (ICameraFocusable cameraFocusable in this.secondaryTargetList)
+        {
+            if (cameraFocusable.IsActive())
+            {
+                Vector3 pos = cameraFocusable.GetPosition();
+                secondaryGoalTarget += ((new Vector2(pos.x, pos.y) - new Vector2(playerTransform.position.x, playerTransform.position.y)) * secondaryFocusPercent);
+                activeCameraFocusableCount++;
+            }
+        }
+        if (activeCameraFocusableCount <= 0) return Vector2.zero;
+
+        return secondaryGoalTarget;
+    }
     #endregion secondary target methods
 
     
