@@ -30,7 +30,7 @@ public class CameraFollow : MonoBehaviour {
     /// </summary>
     private void Update()
     {
-        Vector3 goalPosition = new Vector3(this.playerTransform.position.x, this.playerTransform.position.y, this.transform.position.z);
+        Vector3 goalPosition = new Vector3(this.playerTransform.position.x, this.playerTransform.position.y, this.transform.position.z) + GetSecondaryTargetAverage();
 
         this.transform.position = Vector3.Lerp(this.transform.position, goalPosition, Time.deltaTime * cameraSpeed);
     }
@@ -88,7 +88,7 @@ public class CameraFollow : MonoBehaviour {
     /// Returns an average offset that the secondary focusable targets will be located.
     /// </summary>
     /// <returns></returns>
-    private Vector2 GetSecondaryTargetAverage()
+    private Vector3 GetSecondaryTargetAverage()
     {
         Vector2 secondaryGoalTarget = Vector2.zero;
         int activeCameraFocusableCount = 0;
