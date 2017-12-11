@@ -1,9 +1,74 @@
 fileFormatVersion: 2
 guid: 392b3f07ac38f87438925c2338793645
-timeCreated: 1512940658
+timeCreated: 1512958828
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Knight Sprite Sheet_0
+    21300002: Down_Idle00
+    21300004: Down_Walk00
+    21300006: Down_Walk01
+    21300008: Down_Walk02
+    21300010: Down_Walk03
+    21300012: Down_Walk04
+    21300014: Up_Idle00
+    21300016: Up_Walk00
+    21300018: Up_Walk01
+    21300020: Up_Walk02
+    21300022: Up_Walk03
+    21300024: Up_Walk04
+    21300026: Side_Idle00
+    21300028: Side_Walk00
+    21300030: Side_Walk01
+    21300032: Side_Walk02
+    21300034: Side_Walk03
+    21300036: Side_Walk04
+    21300038: Knight Sprite Sheet_19
+    21300040: Knight Sprite Sheet_20
+    21300042: Knight Sprite Sheet_21
+    21300044: Knight Sprite Sheet_22
+    21300046: Knight Sprite Sheet_23
+    21300048: Knight Sprite Sheet_24
+    21300050: Knight Sprite Sheet_25
+    21300052: Knight Sprite Sheet_26
+    21300054: Knight Sprite Sheet_27
+    21300056: Knight Sprite Sheet_28
+    21300058: Knight Sprite Sheet_29
+    21300060: Knight Sprite Sheet_30
+    21300062: Knight Sprite Sheet_31
+    21300064: Knight Sprite Sheet_32
+    21300066: Knight Sprite Sheet_33
+    21300068: Knight Sprite Sheet_34
+    21300070: Knight Sprite Sheet_35
+    21300072: Knight Sprite Sheet_36
+    21300074: Knight Sprite Sheet_37
+    21300076: Knight Sprite Sheet_38
+    21300078: Knight Sprite Sheet_39
+    21300080: Knight Sprite Sheet_40
+    21300082: Knight Sprite Sheet_41
+    21300084: Knight Sprite Sheet_42
+    21300086: Knight Sprite Sheet_43
+    21300088: Knight Sprite Sheet_44
+    21300090: Knight Sprite Sheet_45
+    21300092: Knight Sprite Sheet_46
+    21300094: Knight Sprite Sheet_47
+    21300096: Knight Sprite Sheet_48
+    21300098: Knight Sprite Sheet_49
+    21300100: Knight Sprite Sheet_50
+    21300102: Knight Sprite Sheet_51
+    21300104: Knight Sprite Sheet_52
+    21300106: Knight Sprite Sheet_53
+    21300108: Knight Sprite Sheet_54
+    21300110: Knight Sprite Sheet_55
+    21300112: Knight Sprite Sheet_56
+    21300114: Knight Sprite Sheet_57
+    21300116: Knight Sprite Sheet_58
+    21300118: Knight Sprite Sheet_59
+    21300120: Knight Sprite Sheet_60
+    21300122: Knight Sprite Sheet_61
+    21300124: Knight Sprite Sheet_62
+    21300126: Knight Sprite Sheet_63
+    21300128: Knight Sprite Sheet_64
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -76,7 +141,917 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 494
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Down_Idle00
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 454
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Down_Walk00
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 455
+        width: 18
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Down_Walk01
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 456
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Down_Walk02
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 454
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Down_Walk03
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 455
+        width: 18
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Down_Walk04
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 456
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Up_Idle00
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 410
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Up_Walk00
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 411
+        width: 18
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Up_Walk01
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 412
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Up_Walk02
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 410
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Up_Walk03
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 411
+        width: 18
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Up_Walk04
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 412
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Side_Idle00
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 370
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Side_Walk00
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 372
+        width: 17
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Side_Walk01
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 373
+        width: 17
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Side_Walk02
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 370
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Side_Walk03
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 370
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Side_Walk04
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 373
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 326
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 326
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 326
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 326
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 303
+        width: 30
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 324
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 312
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 319
+        width: 21
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 323
+        width: 17
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 323
+        width: 17
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 249
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 248
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 247
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 247
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 249
+        width: 30
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 249
+        width: 22
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 243
+        width: 19
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 249
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 249
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 193
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 193
+        width: 21
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 193
+        width: 32
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 193
+        width: 39
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 193
+        width: 40
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 193
+        width: 32
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 193
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 193
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 141
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 140
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 141
+        width: 20
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 137
+        width: 23
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 136
+        width: 22
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 138
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 83
+        width: 21
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 83
+        width: 31
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 117
+        width: 9
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 83
+        width: 18
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 83
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 82
+        width: 18
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 83
+        width: 16
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 33
+        width: 18
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 33
+        width: 25
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 33
+        width: 31
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 33
+        width: 41
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 33
+        width: 32
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight Sprite Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 33
+        width: 25
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
