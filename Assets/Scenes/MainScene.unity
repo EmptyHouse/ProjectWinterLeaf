@@ -112,56 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &8425873 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1551780756761242, guid: b3e39de2ddc65324e966b80648a3e4f7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1416085580}
---- !u!50 &8425875
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 8425873}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &8425879
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 8425873}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 17.8, y: 10}
-  m_EdgeRadius: 0
 --- !u!1 &466845093
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,41 +290,6 @@ Prefab:
     - target: {fileID: 4594681743228176, guid: b3e39de2ddc65324e966b80648a3e4f7, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114611384913820892, guid: b3e39de2ddc65324e966b80648a3e4f7,
-        type: 2}
-      propertyPath: cameraSpeed
-      value: 8.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 20224837900646104, guid: b3e39de2ddc65324e966b80648a3e4f7,
-        type: 2}
-      propertyPath: m_BackGroundColor.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 20224837900646104, guid: b3e39de2ddc65324e966b80648a3e4f7,
-        type: 2}
-      propertyPath: m_BackGroundColor.r
-      value: 0.34124503
-      objectReference: {fileID: 0}
-    - target: {fileID: 20224837900646104, guid: b3e39de2ddc65324e966b80648a3e4f7,
-        type: 2}
-      propertyPath: m_BackGroundColor.g
-      value: 0.21312718
-      objectReference: {fileID: 0}
-    - target: {fileID: 20224837900646104, guid: b3e39de2ddc65324e966b80648a3e4f7,
-        type: 2}
-      propertyPath: m_BackGroundColor.b
-      value: 0.39705884
-      objectReference: {fileID: 0}
-    - target: {fileID: 114611384913820892, guid: b3e39de2ddc65324e966b80648a3e4f7,
-        type: 2}
-      propertyPath: secondaryFocusPercent
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114387570114293988, guid: b3e39de2ddc65324e966b80648a3e4f7,
-        type: 2}
-      propertyPath: runSpeed
-      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3e39de2ddc65324e966b80648a3e4f7, type: 2}
