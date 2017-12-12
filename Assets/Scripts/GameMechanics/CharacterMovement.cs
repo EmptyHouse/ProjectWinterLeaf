@@ -58,14 +58,19 @@ public class CharacterMovement : MonoBehaviour {
     public void UpdateMovement()
     {
         Vector2 goalSpeed = Vector2.zero;
+        this.anim.SetFloat("Speed", Mathf.Max(Mathf.Abs(this.hInput), Mathf.Abs(this.vInput)));
 
         if (Mathf.Abs(this.hInput) > MIN_MOVEMENT_THRESHOLD)
         {
+            anim.SetBool("DirectionSide", true);
             goalSpeed.x = Mathf.Sign(this.hInput);
+            anim.SetBool("Direction", this.hInput > 0);
         }
         if (Mathf.Abs(this.vInput) > MIN_MOVEMENT_THRESHOLD)
         {
+            anim.SetBool("DirectionSide", false);
             goalSpeed.y = Mathf.Sign(this.vInput);
+            anim.SetBool("Direction", this.vInput > 0);
         }
         goalSpeed = goalSpeed.normalized * runSpeed;
 
