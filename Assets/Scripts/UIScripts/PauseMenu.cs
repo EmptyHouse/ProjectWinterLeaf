@@ -17,7 +17,20 @@ public class PauseMenu : MonoBehaviour {
 
     private void Update()
     {
-        
+        if (Input.GetButtonDown("Start"))
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnEnable()
+    {
+        Time.timeScale = 0;
+    }
+
+    private void OnDisable()
+    {
+        Time.timeScale = 1;
     }
     #endregion monobehaviour methods
 

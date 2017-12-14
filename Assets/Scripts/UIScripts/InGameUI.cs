@@ -19,10 +19,23 @@ public class InGameUI : MonoBehaviour {
     }
     #endregion static variables
 
+    #region main variables 
+    public PauseMenu pauseMenu;
+
+    #endregion main variables
+
     #region monobehaviour methods
     private void Awake()
     {
         
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Start") && !pauseMenu.gameObject.activeSelf)
+        {
+            pauseMenu.gameObject.SetActive(true);
+        }
     }
     #endregion monobehaviour methods
 
