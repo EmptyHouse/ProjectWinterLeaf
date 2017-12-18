@@ -34,7 +34,12 @@ public class InGameUI : MonoBehaviour {
     #region monobehaviour methods
     private void Awake()
     {
-        
+        instance = this;
+    }
+
+    private void Start()
+    {
+        UpdateHealth();
     }
 
     private void Update()
@@ -51,7 +56,7 @@ public class InGameUI : MonoBehaviour {
     /// </summary>
     public void UpdateHealth()
     {
-        
+        healthBarSlider.value = GameOverseer.Instance.player.currentHealth / GameOverseer.Instance.player.maxHealth;
     }
 
 }

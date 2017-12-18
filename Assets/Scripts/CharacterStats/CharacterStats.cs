@@ -8,7 +8,7 @@ public class CharacterStats : MonoBehaviour {
 
     public CharacterMovement characterMovement { get; private set; }
 
-    private float currentHealth;
+    public float currentHealth { get; protected set; }
     #endregion main variables
 
 
@@ -17,6 +17,14 @@ public class CharacterStats : MonoBehaviour {
     {
         this.currentHealth = maxHealth;
         this.characterMovement = GetComponent<CharacterMovement>();
+    }
+
+    protected virtual void OnValidate()
+    {
+        if (maxHealth < 1)
+        {
+            maxHealth = 1;
+        }
     }
     #endregion monobehaviour methods
 
