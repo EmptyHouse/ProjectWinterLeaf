@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class InGameUI : MonoBehaviour {
@@ -20,7 +21,13 @@ public class InGameUI : MonoBehaviour {
     #endregion static variables
 
     #region main variables 
+    [Header("UI Screens")]
     public PauseMenu pauseMenu;
+    public RectTransform GameHUD;
+
+
+    [Header("Player Stats UI")]
+    public Slider healthBarSlider;
 
     #endregion main variables
 
@@ -38,5 +45,13 @@ public class InGameUI : MonoBehaviour {
         }
     }
     #endregion monobehaviour methods
+
+    /// <summary>
+    /// This method should be called any time a player receives or takes damage
+    /// </summary>
+    public void UpdateHealth()
+    {
+        
+    }
 
 }
