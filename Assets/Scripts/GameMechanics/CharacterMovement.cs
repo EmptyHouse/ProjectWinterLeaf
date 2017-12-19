@@ -17,6 +17,7 @@ public class CharacterMovement : MonoBehaviour {
     private float hInput;
     private float vInput;
     private Vector2 currentVelocity = Vector2.zero;
+    private Rigidbody2D rigid;
     #endregion main variables
 
     #region monobehaviour methods
@@ -24,6 +25,7 @@ public class CharacterMovement : MonoBehaviour {
     private void Awake()
     {
         this.anim = GetComponent<Animator>();
+        this.rigid = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -35,6 +37,11 @@ public class CharacterMovement : MonoBehaviour {
     {
         if (walkSpeed < 0) walkSpeed = 0;
         if (runSpeed < 0) runSpeed = 0;
+    }
+
+    private void FixedUpdate()
+    {
+        rigid.velocity = currentVelocity;
     }
     #endregion monobehaviour methods
 
@@ -55,7 +62,7 @@ public class CharacterMovement : MonoBehaviour {
     }
     #endregion set directions
 
-    public void UpdateMovement()
+    public void UpdateMovementSpeed()
     {
         Vector2 goalSpeed = Vector2.zero;
         this.anim.SetFloat("Speed", Mathf.Max(Mathf.Abs(this.hInput), Mathf.Abs(this.vInput)));
@@ -76,7 +83,7 @@ public class CharacterMovement : MonoBehaviour {
 
         currentVelocity = Vector2.MoveTowards(currentVelocity, goalSpeed, Time.deltaTime * acceleration);
 
-        this.transform.position += (Time.deltaTime * new Vector3(currentVelocity.x, currentVelocity.y, 0));
+        //this.transform.position += (Time.deltaTime * new Vector3(currentVelocity.x, currentVelocity.y, 0));
     }
 
     

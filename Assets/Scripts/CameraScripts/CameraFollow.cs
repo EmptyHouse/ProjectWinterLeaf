@@ -31,8 +31,10 @@ public class CameraFollow : MonoBehaviour {
     private void Update()
     {
         Vector3 goalPosition = new Vector3(this.playerTransform.position.x, this.playerTransform.position.y, this.transform.position.z) + GetSecondaryTargetAverage();
-
-        this.transform.position = Vector3.Lerp(this.transform.position, goalPosition, Time.deltaTime * cameraSpeed);
+        float percentageToMove = Time.deltaTime / (1f / 60f);
+        float speed = Mathf.Pow(cameraSpeed, percentageToMove);
+        //percentageToMove = Mathf.Pow(1f / 60f, percentageToMove);
+        this.transform.position = goalPosition;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

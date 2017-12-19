@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
     {
         characterMovement.SetHorizontalDirection(Input.GetAxisRaw("Horizontal"));
         characterMovement.SetVerticalDirection(Input.GetAxisRaw("Vertical"));
-        characterMovement.UpdateMovement();
+        characterMovement.UpdateMovementSpeed();
 
     }
     #endregion monobehaviour methods
